@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Video } from "lucide-react";
 import Link from "next/link";
-import CreateRoomButton from "@/components/create-room-button";
 
 export default function Home() {
   return (
@@ -17,7 +16,9 @@ export default function Home() {
             Connect with anyone, anywhere through high-quality video calls
           </p>
           <div className="flex flex-col w-full space-y-4">
-            <CreateRoomButton />
+            <Button asChild>
+              <Link href="/create">Create New Room</Link>
+            </Button>
             <Button variant="outline" className="w-full" asChild>
               <Link href="/join">Join Existing Room</Link>
             </Button>
