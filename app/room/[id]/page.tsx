@@ -42,7 +42,7 @@ export default function Page({ params }: { params: Params }) {
           {/* Your custom component with basic video conferencing functionality. */}
           <MyVideoConference />
           {/* The RoomAudioRenderer takes care of room-wide audio for you. */}
-          <RoomAudioRenderer volume={0}/>
+          <RoomAudioRenderer />
           {/* Controls for the user to start/stop audio, video, and screen  share tracks and to leave the room. */}
           <ControlBar />
         </LiveKitRoom>
